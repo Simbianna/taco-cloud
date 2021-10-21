@@ -7,19 +7,16 @@ import org.springframework.jdbc.core.PreparedStatementCreatorFactory;
 import org.springframework.jdbc.support.GeneratedKeyHolder;
 import org.springframework.jdbc.support.KeyHolder;
 import org.springframework.stereotype.Repository;
-import ru.simbial.tacos.Ingredient;
-import ru.simbial.tacos.Taco;
-import ru.simbial.tacos.repository.TacoRepository;
+import ru.simbial.tacos.model.Ingredient;
+import ru.simbial.tacos.model.Taco;
 
 import java.sql.Timestamp;
 import java.sql.Types;
 import java.util.Arrays;
 import java.util.Date;
-import java.util.Map;
-import java.util.Objects;
 
 @Repository
-public class JdbcTacoRepository implements TacoRepository {
+public class JdbcTacoRepository{
 
     private JdbcTemplate jdbc;
 
@@ -28,7 +25,6 @@ public class JdbcTacoRepository implements TacoRepository {
         this.jdbc = jdbc;
     }
 
-    @Override
     public Taco save(Taco taco) {
         long tacoId = saveTacoInfo(taco);
         taco.setId(tacoId);

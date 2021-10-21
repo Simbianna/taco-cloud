@@ -1,17 +1,16 @@
 package ru.simbial.tacos.web;
 
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.Errors;
 import org.springframework.web.bind.annotation.*;
-import ru.simbial.tacos.Ingredient;
-import ru.simbial.tacos.Ingredient.Type;
-import ru.simbial.tacos.Order;
-import ru.simbial.tacos.Taco;
-import ru.simbial.tacos.repository.IngredientRepository;
-import ru.simbial.tacos.repository.TacoRepository;
+import ru.simbial.tacos.model.Ingredient;
+import ru.simbial.tacos.model.Ingredient.Type;
+import ru.simbial.tacos.model.Order;
+import ru.simbial.tacos.model.Taco;
+import ru.simbial.tacos.repository.jpa.IngredientRepository;
+import ru.simbial.tacos.repository.jpa.TacoRepository;
 
 import javax.validation.Valid;
 import java.util.ArrayList;
@@ -45,11 +44,11 @@ public class DesignTacoController {
 
     @GetMapping
     public String showDesignForm(Model model) {
-        List<Ingredient> ingredients = new ArrayList<>();
-        ingredientRepo.findAll().forEach(ingredients::add);
+        List<Ingredient> ingredients = ingredientRepo.findAll();
 
         Type[] types = Ingredient.Type.values();
         for (Type type : types) {
+            System.out.println();
             model.addAttribute(type.toString().toLowerCase(),
                     filterByType(ingredients, type));
         }
@@ -74,10 +73,14 @@ public class DesignTacoController {
 
     private List<Ingredient> filterByType(
             List<Ingredient> ingredients, Type type) {
-        return ingredients
+
+        List<Ingredient> ing =
+        ingredients
                 .stream()
                 .filter(x -> x.getType().equals(type))
                 .collect(Collectors.toList());
+        ing.forEach(System.out::println);
+        return ing;
     }
 
 }
