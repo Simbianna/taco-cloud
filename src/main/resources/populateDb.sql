@@ -24,3 +24,6 @@ insert into ingredient (id, name, type)
                 values ('SLSA', 'Salsa', 'SAUCE');
 insert into ingredient (id, name, type)
                 values ('SRCR', 'Sour Cream', 'SAUCE');
+
+insert into users (id, username,password,fullname,street,city,state,zip,phoneNumber)
+values (1, 'username','password','fullname','street','city','state','zip','phoneNumber');

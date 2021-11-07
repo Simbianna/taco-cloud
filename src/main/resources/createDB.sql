@@ -47,3 +47,16 @@ alter table taco_order_tacos
     add foreign key (tacoOrder) references taco_order (id);
 alter table taco_order_tacos
     add foreign key (taco_id) references taco (id);
+    
+create table  if not exists users
+    (
+    id serial primary key,
+    username VARCHAR(100),
+    password VARCHAR(100),
+    fullname VARCHAR(100),
+    street VARCHAR(100),
+    city VARCHAR(100),
+    state VARCHAR(100),
+    zip VARCHAR(100),
+    phoneNumber VARCHAR(100)
+    );

@@ -1,0 +1,144 @@
+2021-11-07 16:56:17.543  INFO 64509 --- [restartedMain] ru.simbianna.tacos.TacoCloudApplication  : Starting TacoCloudApplication using Java 11.0.10 on Air-Annette with PID 64509 (/Users/annettesimbi/Java/JavaProjects/taco-cloud/target/classes started by annettesimbi in /Users/annettesimbi/Java/JavaProjects/taco-cloud)
+2021-11-07 16:56:17.549  INFO 64509 --- [restartedMain] ru.simbianna.tacos.TacoCloudApplication  : No active profile set, falling back to default profiles: default
+2021-11-07 16:56:17.647  INFO 64509 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-11-07 16:56:17.648  INFO 64509 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-11-07 16:56:18.616  INFO 64509 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-07 16:56:18.691  INFO 64509 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 70 ms. Found 4 JPA repository interfaces.
+2021-11-07 16:56:19.410  INFO 64509 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8443 (http)
+2021-11-07 16:56:19.417  INFO 64509 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-11-07 16:56:19.418  INFO 64509 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.53]
+2021-11-07 16:56:19.481  INFO 64509 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-11-07 16:56:19.481  INFO 64509 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1832 ms
+2021-11-07 16:56:19.638  INFO 64509 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-11-07 16:56:19.670  INFO 64509 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-11-07 16:56:19.742  INFO 64509 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-11-07 16:56:19.798  INFO 64509 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-11-07 16:56:19.858  INFO 64509 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-11-07 16:56:19.873  INFO 64509 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-11-07 16:56:20.506  INFO 64509 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-11-07 16:56:20.513  INFO 64509 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-07 16:56:20.646  WARN 64509 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-07 16:56:21.107 DEBUG 64509 --- [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression [hasRole('ROLE_USER')] for Ant [pattern='/design']
+2021-11-07 16:56:21.108 DEBUG 64509 --- [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression [hasRole('ROLE_USER')] for Ant [pattern='/orders']
+2021-11-07 16:56:21.109 DEBUG 64509 --- [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/']
+2021-11-07 16:56:21.109 DEBUG 64509 --- [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/**']
+2021-11-07 16:56:21.114  INFO 64509 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@168e25fd, org.springframework.security.web.context.SecurityContextPersistenceFilter@2cbf931a, org.springframework.security.web.header.HeaderWriterFilter@1d5d905a, org.springframework.security.web.csrf.CsrfFilter@39cc7057, org.springframework.security.web.authentication.logout.LogoutFilter@2576a780, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@56824768, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6c4d0e86, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6eebdbe8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3ed3c548, org.springframework.security.web.session.SessionManagementFilter@1bd0eb6c, org.springframework.security.web.access.ExceptionTranslationFilter@5be5a24, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4afc548a]
+2021-11-07 16:56:21.560  INFO 64509 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-11-07 16:56:21.610  INFO 64509 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8443 (http) with context path ''
+2021-11-07 16:56:21.627  INFO 64509 --- [restartedMain] ru.simbianna.tacos.TacoCloudApplication  : Started TacoCloudApplication in 4.706 seconds (JVM running for 5.564)
+2021-11-07 16:56:27.838  INFO 64509 --- [http-nio-8443-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-11-07 16:56:27.840  INFO 64509 --- [http-nio-8443-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-11-07 16:56:27.842  INFO 64509 --- [http-nio-8443-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-11-07 16:56:27.853 DEBUG 64509 --- [http-nio-8443-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /
+2021-11-07 16:56:27.856 DEBUG 64509 --- [http-nio-8443-exec-1] s.s.w.c.SecurityContextPersistenceFilter : Set SecurityContextHolder to empty SecurityContext
+2021-11-07 16:56:27.858 DEBUG 64509 --- [http-nio-8443-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2021-11-07 16:56:27.864 DEBUG 64509 --- [http-nio-8443-exec-1] o.s.s.w.a.i.FilterSecurityInterceptor    : Authorized filter invocation [GET /] with attributes [permitAll]
+2021-11-07 16:56:27.865 DEBUG 64509 --- [http-nio-8443-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /
+2021-11-07 16:56:29.581 DEBUG 64509 --- [http-nio-8443-exec-1] w.c.HttpSessionSecurityContextRepository : Did not store anonymous SecurityContext
+2021-11-07 16:56:29.588 DEBUG 64509 --- [http-nio-8443-exec-1] w.c.HttpSessionSecurityContextRepository : Did not store anonymous SecurityContext
+2021-11-07 16:56:29.596 DEBUG 64509 --- [http-nio-8443-exec-1] s.s.w.c.SecurityContextPersistenceFilter : Cleared SecurityContextHolder to complete request
+2021-11-07 16:56:29.640 DEBUG 64509 --- [http-nio-8443-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /images/TacoCloud.png
+2021-11-07 16:56:29.641 DEBUG 64509 --- [http-nio-8443-exec-2] s.s.w.c.SecurityContextPersistenceFilter : Set SecurityContextHolder to empty SecurityContext
+2021-11-07 16:56:29.641 DEBUG 64509 --- [http-nio-8443-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2021-11-07 16:56:29.652 DEBUG 64509 --- [http-nio-8443-exec-2] o.s.s.w.a.i.FilterSecurityInterceptor    : Authorized filter invocation [GET /images/TacoCloud.png] with attributes [permitAll]
+2021-11-07 16:56:29.652 DEBUG 64509 --- [http-nio-8443-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /images/TacoCloud.png
+2021-11-07 16:56:29.674 DEBUG 64509 --- [http-nio-8443-exec-2] w.c.HttpSessionSecurityContextRepository : Did not store anonymous SecurityContext
+2021-11-07 16:56:29.675 DEBUG 64509 --- [http-nio-8443-exec-2] w.c.HttpSessionSecurityContextRepository : Did not store anonymous SecurityContext
+2021-11-07 16:56:29.675 DEBUG 64509 --- [http-nio-8443-exec-2] s.s.w.c.SecurityContextPersistenceFilter : Cleared SecurityContextHolder to complete request
+2021-11-07 16:56:30.811 DEBUG 64509 --- [http-nio-8443-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /design
+2021-11-07 16:56:30.812 DEBUG 64509 --- [http-nio-8443-exec-3] s.s.w.c.SecurityContextPersistenceFilter : Set SecurityContextHolder to empty SecurityContext
+2021-11-07 16:56:30.814 DEBUG 64509 --- [http-nio-8443-exec-3] o.s.s.w.s.HttpSessionRequestCache        : Loaded matching saved request http://localhost:8080/design
+2021-11-07 16:56:30.818 DEBUG 64509 --- [http-nio-8443-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2021-11-07 16:56:30.822 DEBUG 64509 --- [http-nio-8443-exec-3] o.s.s.w.a.i.FilterSecurityInterceptor    : Failed to authorize filter invocation [GET /design] with attributes [hasRole('ROLE_USER')]
+2021-11-07 16:56:30.833 DEBUG 64509 --- [http-nio-8443-exec-3] o.s.s.w.s.HttpSessionRequestCache        : Saved request http://localhost:8080/design to session
+2021-11-07 16:56:30.841 DEBUG 64509 --- [http-nio-8443-exec-3] o.s.s.web.DefaultRedirectStrategy        : Redirecting to http://localhost:8080/login
+2021-11-07 16:56:30.841 DEBUG 64509 --- [http-nio-8443-exec-3] w.c.HttpSessionSecurityContextRepository : Did not store empty SecurityContext
+2021-11-07 16:56:30.843 DEBUG 64509 --- [http-nio-8443-exec-3] w.c.HttpSessionSecurityContextRepository : Did not store empty SecurityContext
+2021-11-07 16:56:30.844 DEBUG 64509 --- [http-nio-8443-exec-3] s.s.w.c.SecurityContextPersistenceFilter : Cleared SecurityContextHolder to complete request
+2021-11-07 16:57:08.523 DEBUG 64509 --- [http-nio-8443-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /login
+2021-11-07 16:57:08.526 DEBUG 64509 --- [http-nio-8443-exec-4] s.s.w.c.SecurityContextPersistenceFilter : Set SecurityContextHolder to empty SecurityContext
+2021-11-07 16:57:08.527 DEBUG 64509 --- [http-nio-8443-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2021-11-07 16:57:08.531 DEBUG 64509 --- [http-nio-8443-exec-4] o.s.s.w.a.i.FilterSecurityInterceptor    : Authorized filter invocation [GET /login] with attributes [permitAll]
+2021-11-07 16:57:08.532 DEBUG 64509 --- [http-nio-8443-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /login
+2021-11-07 16:57:08.571 DEBUG 64509 --- [http-nio-8443-exec-4] w.c.HttpSessionSecurityContextRepository : Did not store anonymous SecurityContext
+2021-11-07 16:57:08.574 DEBUG 64509 --- [http-nio-8443-exec-4] w.c.HttpSessionSecurityContextRepository : Did not store anonymous SecurityContext
+2021-11-07 16:57:08.574 DEBUG 64509 --- [http-nio-8443-exec-4] s.s.w.c.SecurityContextPersistenceFilter : Cleared SecurityContextHolder to complete request
+2021-11-07 16:57:08.625 DEBUG 64509 --- [http-nio-8443-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /images/TacoCloud.png
+2021-11-07 16:57:08.626 DEBUG 64509 --- [http-nio-8443-exec-5] s.s.w.c.SecurityContextPersistenceFilter : Set SecurityContextHolder to empty SecurityContext
+2021-11-07 16:57:08.626 DEBUG 64509 --- [http-nio-8443-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2021-11-07 16:57:08.627 DEBUG 64509 --- [http-nio-8443-exec-5] o.s.s.w.a.i.FilterSecurityInterceptor    : Authorized filter invocation [GET /images/TacoCloud.png] with attributes [permitAll]
+2021-11-07 16:57:08.627 DEBUG 64509 --- [http-nio-8443-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /images/TacoCloud.png
+2021-11-07 16:57:08.631 DEBUG 64509 --- [http-nio-8443-exec-5] w.c.HttpSessionSecurityContextRepository : Did not store anonymous SecurityContext
+2021-11-07 16:57:08.634 DEBUG 64509 --- [http-nio-8443-exec-5] w.c.HttpSessionSecurityContextRepository : Did not store anonymous SecurityContext
+2021-11-07 16:57:08.637 DEBUG 64509 --- [http-nio-8443-exec-5] s.s.w.c.SecurityContextPersistenceFilter : Cleared SecurityContextHolder to complete request
+2021-11-07 16:58:53.787  INFO 64509 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-07 16:58:53.796  INFO 64509 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-11-07 16:58:53.812  INFO 64509 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-11-07 17:04:06.555  INFO 64712 --- [restartedMain] ru.simbianna.tacos.TacoCloudApplication  : Starting TacoCloudApplication using Java 11.0.10 on Air-Annette with PID 64712 (/Users/annettesimbi/Java/JavaProjects/taco-cloud/target/classes started by annettesimbi in /Users/annettesimbi/Java/JavaProjects/taco-cloud)
+2021-11-07 17:04:06.561  INFO 64712 --- [restartedMain] ru.simbianna.tacos.TacoCloudApplication  : No active profile set, falling back to default profiles: default
+2021-11-07 17:04:06.659  INFO 64712 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-11-07 17:04:06.660  INFO 64712 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-11-07 17:04:07.751  INFO 64712 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-07 17:04:07.841  INFO 64712 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 81 ms. Found 4 JPA repository interfaces.
+2021-11-07 17:04:08.547  INFO 64712 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8443 (http)
+2021-11-07 17:04:08.554  INFO 64712 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-11-07 17:04:08.554  INFO 64712 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.53]
+2021-11-07 17:04:08.614  INFO 64712 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-11-07 17:04:08.615  INFO 64712 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1955 ms
+2021-11-07 17:04:08.761  INFO 64712 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-11-07 17:04:08.787  INFO 64712 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-11-07 17:04:08.852  INFO 64712 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-11-07 17:04:08.904  INFO 64712 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-11-07 17:04:08.962  INFO 64712 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-11-07 17:04:08.978  INFO 64712 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-11-07 17:04:09.578  INFO 64712 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-11-07 17:04:09.584  INFO 64712 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-07 17:04:09.688  WARN 64712 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-07 17:04:10.144 DEBUG 64712 --- [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression [hasRole('ROLE_USER')] for Ant [pattern='/design']
+2021-11-07 17:04:10.145 DEBUG 64712 --- [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression [hasRole('ROLE_USER')] for Ant [pattern='/orders']
+2021-11-07 17:04:10.145 DEBUG 64712 --- [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/']
+2021-11-07 17:04:10.146 DEBUG 64712 --- [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/**']
+2021-11-07 17:04:10.150  INFO 64712 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5d9107b2, org.springframework.security.web.context.SecurityContextPersistenceFilter@7c914b6b, org.springframework.security.web.header.HeaderWriterFilter@705a26a0, org.springframework.security.web.csrf.CsrfFilter@23fae2c1, org.springframework.security.web.authentication.logout.LogoutFilter@1e616014, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6a45884c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@c65b04b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5977001a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2cbf931a, org.springframework.security.web.session.SessionManagementFilter@259be564, org.springframework.security.web.access.ExceptionTranslationFilter@285a64aa, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1ac4b19b]
+2021-11-07 17:04:10.564  INFO 64712 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-11-07 17:04:10.614  INFO 64712 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8443 (http) with context path ''
+2021-11-07 17:04:10.630  INFO 64712 --- [restartedMain] ru.simbianna.tacos.TacoCloudApplication  : Started TacoCloudApplication in 4.593 seconds (JVM running for 5.508)
+2021-11-07 17:04:18.326  INFO 64712 --- [http-nio-8443-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-11-07 17:04:18.327  INFO 64712 --- [http-nio-8443-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-11-07 17:04:18.329  INFO 64712 --- [http-nio-8443-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-11-07 17:04:18.336 DEBUG 64712 --- [http-nio-8443-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /
+2021-11-07 17:04:18.338 DEBUG 64712 --- [http-nio-8443-exec-1] s.s.w.c.SecurityContextPersistenceFilter : Set SecurityContextHolder to empty SecurityContext
+2021-11-07 17:04:18.340 DEBUG 64712 --- [http-nio-8443-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2021-11-07 17:04:18.346 DEBUG 64712 --- [http-nio-8443-exec-1] o.s.s.w.a.i.FilterSecurityInterceptor    : Authorized filter invocation [GET /] with attributes [permitAll]
+2021-11-07 17:04:18.347 DEBUG 64712 --- [http-nio-8443-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /
+2021-11-07 17:04:20.035 DEBUG 64712 --- [http-nio-8443-exec-1] w.c.HttpSessionSecurityContextRepository : Did not store anonymous SecurityContext
+2021-11-07 17:04:20.044 DEBUG 64712 --- [http-nio-8443-exec-1] w.c.HttpSessionSecurityContextRepository : Did not store anonymous SecurityContext
+2021-11-07 17:04:20.048 DEBUG 64712 --- [http-nio-8443-exec-1] s.s.w.c.SecurityContextPersistenceFilter : Cleared SecurityContextHolder to complete request
+2021-11-07 17:04:20.067 DEBUG 64712 --- [http-nio-8443-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /images/TacoCloud.png
+2021-11-07 17:04:20.067 DEBUG 64712 --- [http-nio-8443-exec-2] s.s.w.c.SecurityContextPersistenceFilter : Set SecurityContextHolder to empty SecurityContext
+2021-11-07 17:04:20.068 DEBUG 64712 --- [http-nio-8443-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2021-11-07 17:04:20.069 DEBUG 64712 --- [http-nio-8443-exec-2] o.s.s.w.a.i.FilterSecurityInterceptor    : Authorized filter invocation [GET /images/TacoCloud.png] with attributes [permitAll]
+2021-11-07 17:04:20.070 DEBUG 64712 --- [http-nio-8443-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /images/TacoCloud.png
+2021-11-07 17:04:20.071  WARN 64712 --- [http-nio-8443-exec-2] o.s.web.servlet.PageNotFound             : No mapping for GET /images/TacoCloud.png
+2021-11-07 17:04:20.072 DEBUG 64712 --- [http-nio-8443-exec-2] w.c.HttpSessionSecurityContextRepository : Did not store anonymous SecurityContext
+2021-11-07 17:04:20.072 DEBUG 64712 --- [http-nio-8443-exec-2] w.c.HttpSessionSecurityContextRepository : Did not store anonymous SecurityContext
+2021-11-07 17:04:20.072 DEBUG 64712 --- [http-nio-8443-exec-2] s.s.w.c.SecurityContextPersistenceFilter : Cleared SecurityContextHolder to complete request
+2021-11-07 17:04:20.074 DEBUG 64712 --- [http-nio-8443-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /error
+2021-11-07 17:04:20.074 DEBUG 64712 --- [http-nio-8443-exec-2] s.s.w.c.SecurityContextPersistenceFilter : Set SecurityContextHolder to empty SecurityContext
+2021-11-07 17:04:20.074 DEBUG 64712 --- [http-nio-8443-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2021-11-07 17:04:20.074 DEBUG 64712 --- [http-nio-8443-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /error
+2021-11-07 17:04:20.149 DEBUG 64712 --- [http-nio-8443-exec-2] w.c.HttpSessionSecurityContextRepository : Did not store anonymous SecurityContext
+2021-11-07 17:04:20.153 DEBUG 64712 --- [http-nio-8443-exec-2] w.c.HttpSessionSecurityContextRepository : Did not store anonymous SecurityContext
+2021-11-07 17:04:20.153 DEBUG 64712 --- [http-nio-8443-exec-2] s.s.w.c.SecurityContextPersistenceFilter : Cleared SecurityContextHolder to complete request
+2021-11-07 17:04:22.665 DEBUG 64712 --- [http-nio-8443-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /design
+2021-11-07 17:04:22.665 DEBUG 64712 --- [http-nio-8443-exec-3] s.s.w.c.SecurityContextPersistenceFilter : Set SecurityContextHolder to empty SecurityContext
+2021-11-07 17:04:22.668 DEBUG 64712 --- [http-nio-8443-exec-3] o.s.s.w.s.HttpSessionRequestCache        : Loaded matching saved request http://localhost:8080/design
+2021-11-07 17:04:22.673 DEBUG 64712 --- [http-nio-8443-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2021-11-07 17:04:22.678 DEBUG 64712 --- [http-nio-8443-exec-3] o.s.s.w.a.i.FilterSecurityInterceptor    : Failed to authorize filter invocation [GET /design] with attributes [hasRole('ROLE_USER')]
+2021-11-07 17:04:22.692 DEBUG 64712 --- [http-nio-8443-exec-3] o.s.s.w.s.HttpSessionRequestCache        : Saved request http://localhost:8080/design to session
+2021-11-07 17:04:22.694 DEBUG 64712 --- [http-nio-8443-exec-3] o.s.s.web.DefaultRedirectStrategy        : Redirecting to http://localhost:8080/login
+2021-11-07 17:04:22.694 DEBUG 64712 --- [http-nio-8443-exec-3] w.c.HttpSessionSecurityContextRepository : Did not store empty SecurityContext
+2021-11-07 17:04:22.695 DEBUG 64712 --- [http-nio-8443-exec-3] w.c.HttpSessionSecurityContextRepository : Did not store empty SecurityContext
+2021-11-07 17:04:22.695 DEBUG 64712 --- [http-nio-8443-exec-3] s.s.w.c.SecurityContextPersistenceFilter : Cleared SecurityContextHolder to complete request
+2021-11-07 17:04:34.059  INFO 64712 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-07 17:04:34.066  INFO 64712 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-11-07 17:04:34.072  INFO 64712 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
