@@ -5,6 +5,8 @@ target/
 !**/src/test/**/target/
 .gradle
 /build/
+logs
+gradle
 
 ### STS ###
 .apt_generated
@@ -33,5 +35,3 @@ build/
 
 ### VS Code ###
 .vscode/
-/logs/
-/gradle/

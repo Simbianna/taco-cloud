@@ -33,3 +33,10 @@ injected into controllers using @AuthenticationPrincipal.
 - Configuration properties can be set in command-line arguments, environment variables, JVM system properties, properties files, or YAML files, among other options.
 - Configuration properties can be used to override autoconfiguration settings, including the ability to specify a data-source URL and logging levels.
 - Spring profiles can be used with property sources to conditionally set configura- tion properties based on the active profile(s).
+
+### Chapter 5. Creating REST services.
+- REST endpoints can be created with Spring MVC, with controllers that follow the same programming model as browser-targeted controllers.
+- Controller handler methods can either be annotated with @ResponseBody or return ResponseEntity objects to bypass the model and view and write data directly to the response body.
+- The @RestController annotation simplifies REST controllers, eliminating the need to use @ResponseBody on handler methods.
+- Spring HATEOAS enables hyperlinking of resources returned from Spring MVC controllers.
+- Spring Data repositories can automatically be exposed as REST APIs using Spring Data REST.
