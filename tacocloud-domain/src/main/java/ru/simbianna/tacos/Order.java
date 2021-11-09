@@ -63,7 +63,7 @@ public class Order implements Serializable {
     @ManyToOne
     private User user;
 
-    public void addDesign(Taco design) {
+    public void addTaco(Taco design) {
         this.tacos.add(design);
     }
 

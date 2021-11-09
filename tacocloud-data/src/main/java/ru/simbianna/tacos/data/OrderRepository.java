@@ -10,7 +10,7 @@ import ru.simbianna.tacos.User;
 
 import java.util.List;
 
-@Repository
+//@Repository
 public interface OrderRepository extends JpaRepository<Order, Long> {
 
     List<Order> findByUserOrderByPlacedAtDesc(User user, Pageable pageable);

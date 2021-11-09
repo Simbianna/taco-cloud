@@ -1,0 +1,8 @@
+{
+  "properties": [
+    {
+      "name": "taco.discount.codes.abcdef",
+      "type": "java.lang.String",
+      "description": "Description for taco.discount.codes.abcdef."
+  }
+] }

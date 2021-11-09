@@ -9,13 +9,13 @@ create table if not exists taco
 (
     id        serial primary key ,
     name      varchar(50) not null,
-    createdAt timestamp   not null default now()
+    createdat timestamp   not null default now()
 );
 
-create table if not exists taco_ingredient
+create table if not exists taco_ingredients
 (
     taco_id       bigint     not null,
-    ingredient_id varchar(4) not null
+    ingredients_id varchar(4) not null
 );
 
 alter table taco_ingredients
@@ -48,7 +48,7 @@ alter table taco_order_tacos
 alter table taco_order_tacos
     add foreign key (taco_id) references taco (id);
     
-create table  if not exists users
+create table if not exists users
     (
     id serial primary key,
     username VARCHAR(100),

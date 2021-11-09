@@ -8,34 +8,34 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.util.Arrays;
 import java.util.Collection;
 
 @Entity
 @Data
 @NoArgsConstructor(access = AccessLevel.PRIVATE, force = true)
-@RequiredArgsConstructor
+//@RequiredArgsConstructor
+@Table(name = "users", schema = "public")
 public class User implements UserDetails {
 
     private static final long serialVersionUID = 1L;
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private final String username;
-    private final String password;
-    private final String fullname;
-    private final String street;
-    private final String city;
-    private final String state;
-    private final String zip;
-    private final String phoneNumber;
+    private  String username;
+    private  String password;
+    private  String fullname;
+    private  String street;
+    private  String city;
+    private  String state;
+    private  String zip;
+    private  String phoneNumber;
 
+    public User(String user, String password, String craig_walls, String s, String cross_roads, String tx, String s1, String s2) {
+    }
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
@@ -61,4 +61,5 @@ public class User implements UserDetails {
     public boolean isEnabled() {
         return true;
     }
+
 }

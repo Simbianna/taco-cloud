@@ -18,6 +18,7 @@
             <artifactId>tacocloud-data</artifactId>
             <version>${tacocloud.version}</version>
         </dependency>
+
         <dependency>
             <groupId>ru.simbianna</groupId>
             <artifactId>tacocloud-domain</artifactId>
@@ -33,18 +34,18 @@
             <artifactId>tacocloud-api</artifactId>
             <version>${tacocloud.version}</version>
         </dependency>
+
         <dependency>
-            <groupId>ru.simbianna</groupId>
-            <artifactId>tacocloud-ui</artifactId>
-            <version>${tacocloud.version}</version>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
-        <!-- Run against embedded H2 database by default -->
+        <!--&lt;!&ndash; Run against embedded H2 database by default &ndash;&gt;
         <dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
             <scope>runtime</scope>
-        </dependency>
+        </dependency>-->
 
         <!-- Actuator and DevTools...just because -->
         <dependency>
@@ -52,9 +53,17 @@
             <artifactId>spring-boot-devtools</artifactId>
             <scope>runtime</scope>
         </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.postgresql/postgresql -->
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>42.3.1</version>
         </dependency>
 
         <!-- Test dependencies -->
@@ -73,6 +82,12 @@
             <artifactId>htmlunit-driver</artifactId>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <scope>test</scope>
+        </dependency>
+
     </dependencies>
 
     <build>

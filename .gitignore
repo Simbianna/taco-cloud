@@ -3,10 +3,10 @@ target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
-.gradle
+.gradle/
 /build/
-logs
-gradle
+logs/
+gradle/
 
 ### STS ###
 .apt_generated
@@ -35,3 +35,4 @@ build/
 
 ### VS Code ###
 .vscode/
+/.gradle/

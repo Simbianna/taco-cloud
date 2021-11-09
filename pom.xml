@@ -8,9 +8,9 @@
         <module>tacos</module>
         <module>tacocloud-data</module>
         <module>tacocloud-security</module>
-        <module>tacocloud-ui</module>
         <module>tacocloud-web</module>
         <module>tacocloud-domain</module>
+        <module>tacocloud-restclient</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
