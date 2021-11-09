@@ -1,0 +1,7 @@
+http://localhost:15672/
+
+brew services start rabbitmq
+brew services stop rabbitmq
+
+rabbitmq-server
+rabbitmqctl stop

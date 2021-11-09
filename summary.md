@@ -41,7 +41,17 @@ injected into controllers using @AuthenticationPrincipal.
 - Spring HATEOAS enables hyperlinking of resources returned from Spring MVC controllers.
 - Spring Data repositories can automatically be exposed as REST APIs using Spring Data REST.
 
-### Chapter 7. Creating REST services.
+### Chapter 7. Consuming REST services.
 - Clients can use RestTemplate to make HTTP requests against REST APIs.
 - Traverson enables clients to navigate an API using hyperlinks embedded in the
 responses.
+
+### Chapter 8. Sending messages asynchronously.
+- Asynchronous messaging provides a layer of indirection between communicat- ing applications, which allows for looser coupling and greater scalability.
+- Spring supports asynchronous messaging with JMS, RabbitMQ, or Apache Kafka.
+- Applications can use template-based clients (JmsTemplate, RabbitTemplate, or
+KafkaTemplate) to send messages via a message broker.
+- Receiving applications can consume messages in a pull-based model using the
+same template-based clients.
+- Messages can also be pushed to consumers by applying message listener annota-
+tions (@JmsListener, @RabbitListener, or @KafkaListener) to bean methods.

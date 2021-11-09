@@ -35,6 +35,31 @@
             <version>${tacocloud.version}</version>
         </dependency>
 
+        <!--<dependency>
+            <groupId>ru.simbianna</groupId>
+            <artifactId>tacocloud-messaging-jms</artifactId>
+            <version>${tacocloud.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>ru.simbianna</groupId>
+            <artifactId>tacocloud-messaging-rabbitmq</artifactId>
+            <version>${tacocloud.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>ru.simbianna</groupId>
+            <artifactId>tacocloud-messaging-kafka</artifactId>
+            <version>${tacocloud.version}</version>
+        </dependency>-->
+
+
+        <dependency>
+            <groupId>ru.simbianna</groupId>
+            <artifactId>tacocloud-kitchen</artifactId>
+            <version>${tacocloud.version}</version>
+        </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>

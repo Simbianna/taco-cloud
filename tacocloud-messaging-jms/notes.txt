@@ -1,0 +1,4 @@
+sudo /var/lib/test-broker/bin/artemis run
+sudo /var/lib/test-broker/bin/artemis stop
+
+http://localhost:8161/console
